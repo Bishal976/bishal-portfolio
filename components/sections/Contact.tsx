@@ -33,13 +33,14 @@ export default function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          name: formData.name,
+          name: formData.name.slice(0, 100),
           email: formData.email,
-          message: formData.message,
-          _subject: `Portfolio inquiry from ${formData.name}`,
+          message: formData.message.slice(0, 2000),
+          _subject: `Portfolio inquiry from ${formData.name.replace(/[^\w\s-]/g, "").slice(0, 60)}`,
           _template: "table",
         }),
       });
+      if (!res.ok) { setStatus("error"); return; }
       const data = await res.json();
       if (data.success === "true" || data.success === true) {
         setStatus("success");

@@ -6,7 +6,6 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 export default function CustomCursor() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  const isHovering = useRef(false);
   const dotRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
 
@@ -23,7 +22,6 @@ export default function CustomCursor() {
     };
 
     const onEnter = () => {
-      isHovering.current = true;
       if (ringRef.current) {
         ringRef.current.style.width = "40px";
         ringRef.current.style.height = "40px";
@@ -33,7 +31,6 @@ export default function CustomCursor() {
     };
 
     const onLeave = () => {
-      isHovering.current = false;
       if (ringRef.current) {
         ringRef.current.style.width = "24px";
         ringRef.current.style.height = "24px";

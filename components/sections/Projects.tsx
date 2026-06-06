@@ -4,7 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { ExternalLink, Lock, Construction } from "lucide-react";
 import { GitHubIcon } from "@/components/ui/Icons";
 import SectionLabel from "@/components/ui/SectionLabel";
-import { PROJECTS } from "@/lib/constants";
+import { PROJECTS, SOCIAL_LINKS } from "@/lib/constants";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -107,7 +107,7 @@ export default function Projects() {
           {/* All on GitHub link */}
           <motion.div variants={fadeUp} className="mt-10 text-center">
             <a
-              href="https://github.com/Bishal976"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-[#6B6B7B] hover:text-[#6C63FF] transition-colors group"
