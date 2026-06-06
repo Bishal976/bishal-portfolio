@@ -29,7 +29,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
     try {
-      const res = await fetch("https://formsubmit.co/ajax/singhbishalkumarsingh@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/elevatedsoul2225@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({

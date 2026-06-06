@@ -12,7 +12,7 @@ export const SOCIAL_LINKS = {
   twitter: "https://x.com/RDXgrinds",
   instagram: "https://instagram.com/bishalsingh2225",
   leetcode: "https://leetcode.com/singhbishalkumarsingh",
-  email: "singhbishalkumarsingh@gmail.com",
+  email: "elevatedsoul2225@gmail.com",
 };
 
 export const TYPEWRITER_PHRASES = [

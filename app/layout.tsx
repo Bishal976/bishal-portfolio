@@ -18,7 +18,7 @@ const syne = Syne({
   preload: true,
 });
 
-const BASE_URL = "https://bishalkumar.dev";
+const BASE_URL = "https://bishal-portfolio-seven.vercel.app";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -96,7 +96,7 @@ const jsonLd = {
   name: "Bishal Kumar",
   jobTitle: "Senior Frontend Developer",
   url: BASE_URL,
-  email: "singhbishalkumarsingh@gmail.com",
+  email: "elevatedsoul2225@gmail.com",
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "Galgotias University",

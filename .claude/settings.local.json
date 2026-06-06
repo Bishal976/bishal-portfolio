@@ -43,7 +43,21 @@
       "Bash(curl -sI -H \"Accept-Encoding: gzip\" http://localhost:3001/_next/static/chunks/3n7dm2ojtyzwn.js)",
       "Bash(convert '/home/ubuntu/Downloads/bishal formal.png' -resize 400x400^ -gravity center -extent 400x400 -quality 85 /home/ubuntu/Desktop/solopreneur/proj/public/assets/bishal-photo.png)",
       "Bash(git -C /home/ubuntu/Desktop/solopreneur/proj add -A)",
-      "Bash(git -C /home/ubuntu/Desktop/solopreneur/proj commit -m ' *)"
+      "Bash(git -C /home/ubuntu/Desktop/solopreneur/proj commit -m ' *)",
+      "Bash(git -C /home/ubuntu/Desktop/solopreneur/proj push origin main)",
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel inspect *)",
+      "Bash(vercel ls *)",
+      "Bash(vercel logs *)",
+      "Bash(jobs -l)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://proj-jnoac45me-solopreneur-fhn8.vercel.app/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://proj-pi-sable.vercel.app/)",
+      "Bash(vercel *)",
+      "Bash(curl -s https://proj-pi-sable.vercel.app/)",
+      "Bash(curl -sI https://proj-pi-sable.vercel.app/)",
+      "Bash(curl -s https://bishal-portfolio-seven.vercel.app/)",
+      "Bash(sed -i 's|https://bishalkumar\\\\.dev|https://bishal-portfolio-seven.vercel.app|g' /home/ubuntu/Desktop/solopreneur/proj/app/layout.tsx /home/ubuntu/Desktop/solopreneur/proj/public/sitemap.xml /home/ubuntu/Desktop/solopreneur/proj/public/robots.txt)",
+      "Bash(sed -i 's/<lastmod>.*<\\\\/lastmod>/<lastmod>2026-06-06<\\\\/lastmod>/' /home/ubuntu/Desktop/solopreneur/proj/public/sitemap.xml)"
     ]
   }
 }
