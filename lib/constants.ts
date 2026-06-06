@@ -9,7 +9,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = {
   github: "https://github.com/Bishal976",
   linkedin: "https://linkedin.com/in/bishal-kumar-054b30192",
-  twitter: "https://twitter.com/BishalK56217747",
+  twitter: "https://x.com/RDXgrinds",
   instagram: "https://instagram.com/bishalsingh2225",
   leetcode: "https://leetcode.com/singhbishalkumarsingh",
   email: "singhbishalkumarsingh@gmail.com",
@@ -141,6 +141,7 @@ export interface Recognition {
   icon: string;
   title: string;
   description: string;
+  link?: string;
 }
 
 export const RECOGNITION: Recognition[] = [
@@ -168,6 +169,7 @@ export const RECOGNITION: Recognition[] = [
     icon: "☁️",
     title: "Google Cloud Certified",
     description: "Certified GCP practitioner and facilitator",
+    link: "https://www.qwiklabs.com/public_profiles/e10ea8e8-0e5c-49dd-aed9-7021df307faf",
   },
   {
     icon: "🏆",

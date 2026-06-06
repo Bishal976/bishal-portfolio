@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="mailto:singhbishalkumarsingh@gmail.com"
+              href={`mailto:${SOCIAL_LINKS.email}`}
               className="relative px-5 py-2 text-sm font-medium rounded-lg border border-[rgba(108,99,255,0.5)] text-[#F0F0F5] hover:border-[#6C63FF] hover:shadow-[0_0_20px_rgba(108,99,255,0.25)] transition-all duration-300"
             >
               Hire Me
@@ -107,7 +107,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: NAV_LINKS.length * 0.08 }}
-                href="mailto:singhbishalkumarsingh@gmail.com"
+                href={`mailto:${SOCIAL_LINKS.email}`}
                 className="mt-4 px-8 py-3 text-lg font-medium rounded-lg bg-[#6C63FF] text-white shadow-[0_0_24px_rgba(108,99,255,0.4)]"
                 onClick={() => setMenuOpen(false)}
               >

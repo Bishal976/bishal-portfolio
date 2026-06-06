@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
-import { Mail, Copy, Check, ArrowRight } from "lucide-react";
+import { Mail, Copy, Check, ArrowRight, Send, Loader2 } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { SOCIAL_LINKS } from "@/lib/constants";
@@ -12,9 +12,12 @@ const fadeUp: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.65 } },
 };
 
+type Status = "idle" | "sending" | "success" | "error";
+
 export default function Contact() {
   const [copied, setCopied] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState<Status>("idle");
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText(SOCIAL_LINKS.email);
@@ -22,11 +25,31 @@ export default function Contact() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio inquiry from ${formData.name}`);
-    const body = encodeURIComponent(`Hi Bishal,\n\n${formData.message}\n\nBest,\n${formData.name}\n${formData.email}`);
-    window.location.href = `mailto:${SOCIAL_LINKS.email}?subject=${subject}&body=${body}`;
+    setStatus("sending");
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/singhbishalkumarsingh@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `Portfolio inquiry from ${formData.name}`,
+          _template: "table",
+        }),
+      });
+      const data = await res.json();
+      if (data.success === "true" || data.success === true) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -110,56 +133,92 @@ export default function Contact() {
 
             {/* Right: contact form */}
             <motion.form variants={fadeUp} onSubmit={handleSubmit} className="flex flex-col gap-4">
-              <div>
-                <label htmlFor="contact-name" className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-2 block">
-                  Name
-                </label>
-                <input
-                  id="contact-name"
-                  type="text"
-                  required
-                  autoComplete="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData((p) => ({ ...p, name: e.target.value }))}
-                  className="w-full glass rounded-lg px-4 py-3 text-sm text-[#F0F0F5] placeholder-[#6B6B7B] focus:outline-none focus:border-[rgba(108,99,255,0.5)] transition-colors border border-[rgba(255,255,255,0.06)]"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label htmlFor="contact-email" className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-2 block">
-                  Email
-                </label>
-                <input
-                  id="contact-email"
-                  type="email"
-                  required
-                  autoComplete="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
-                  className="w-full glass rounded-lg px-4 py-3 text-sm text-[#F0F0F5] placeholder-[#6B6B7B] focus:outline-none focus:border-[rgba(108,99,255,0.5)] transition-colors border border-[rgba(255,255,255,0.06)]"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div>
-                <label htmlFor="contact-message" className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-2 block">
-                  Message
-                </label>
-                <textarea
-                  id="contact-message"
-                  required
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData((p) => ({ ...p, message: e.target.value }))}
-                  className="w-full glass rounded-lg px-4 py-3 text-sm text-[#F0F0F5] placeholder-[#6B6B7B] focus:outline-none focus:border-[rgba(108,99,255,0.5)] transition-colors resize-none border border-[rgba(255,255,255,0.06)]"
-                  placeholder="Tell me about your project..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="relative self-end inline-flex items-center gap-2 px-7 py-3 rounded-lg font-semibold text-sm text-white bg-[#6C63FF] shadow-[0_0_28px_rgba(108,99,255,0.35)] hover:shadow-[0_0_44px_rgba(108,99,255,0.55)] hover:bg-[#7a73ff] transition-all duration-300 overflow-hidden shimmer-btn"
-              >
-                Send Message <ArrowRight size={15} />
-              </button>
+              {status === "success" ? (
+                <div className="glass rounded-2xl p-8 flex flex-col items-center justify-center gap-4 text-center h-full min-h-[280px]">
+                  <div className="w-14 h-14 rounded-full bg-[rgba(0,212,170,0.12)] flex items-center justify-center">
+                    <Check size={28} className="text-[#00D4AA]" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-[#F0F0F5]">Message sent!</h3>
+                  <p className="text-[#6B6B7B] text-sm max-w-xs">
+                    Thanks for reaching out. I&apos;ll get back to you soon.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setStatus("idle")}
+                    className="text-xs text-[#6C63FF] hover:underline mt-2"
+                  >
+                    Send another
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <div>
+                    <label htmlFor="contact-name" className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-2 block">
+                      Name
+                    </label>
+                    <input
+                      id="contact-name"
+                      type="text"
+                      required
+                      autoComplete="name"
+                      value={formData.name}
+                      onChange={(e) => setFormData((p) => ({ ...p, name: e.target.value }))}
+                      className="w-full glass rounded-lg px-4 py-3 text-sm text-[#F0F0F5] placeholder-[#6B6B7B] focus:outline-none focus:border-[rgba(108,99,255,0.5)] transition-colors border border-[rgba(255,255,255,0.06)]"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="contact-email" className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-2 block">
+                      Email
+                    </label>
+                    <input
+                      id="contact-email"
+                      type="email"
+                      required
+                      autoComplete="email"
+                      value={formData.email}
+                      onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
+                      className="w-full glass rounded-lg px-4 py-3 text-sm text-[#F0F0F5] placeholder-[#6B6B7B] focus:outline-none focus:border-[rgba(108,99,255,0.5)] transition-colors border border-[rgba(255,255,255,0.06)]"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="contact-message" className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-2 block">
+                      Message
+                    </label>
+                    <textarea
+                      id="contact-message"
+                      required
+                      rows={5}
+                      value={formData.message}
+                      onChange={(e) => setFormData((p) => ({ ...p, message: e.target.value }))}
+                      className="w-full glass rounded-lg px-4 py-3 text-sm text-[#F0F0F5] placeholder-[#6B6B7B] focus:outline-none focus:border-[rgba(108,99,255,0.5)] transition-colors resize-none border border-[rgba(255,255,255,0.06)]"
+                      placeholder="Tell me about your project..."
+                    />
+                  </div>
+
+                  {status === "error" && (
+                    <p className="text-xs text-red-400">
+                      Something went wrong. Email me directly at{" "}
+                      <a href={`mailto:${SOCIAL_LINKS.email}`} className="underline">
+                        {SOCIAL_LINKS.email}
+                      </a>
+                    </p>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={status === "sending"}
+                    className="relative self-end inline-flex items-center gap-2 px-7 py-3 rounded-lg font-semibold text-sm text-white bg-[#6C63FF] shadow-[0_0_28px_rgba(108,99,255,0.35)] hover:shadow-[0_0_44px_rgba(108,99,255,0.55)] hover:bg-[#7a73ff] disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-300 overflow-hidden shimmer-btn"
+                  >
+                    {status === "sending" ? (
+                      <><Loader2 size={15} className="animate-spin" /> Sending…</>
+                    ) : (
+                      <><Send size={15} /> Send Message</>
+                    )}
+                  </button>
+                </>
+              )}
             </motion.form>
           </div>
         </motion.div>
@@ -178,7 +237,7 @@ export default function Contact() {
             Have an interesting problem to solve? —
           </p>
           <a
-            href="mailto:singhbishalkumarsingh@gmail.com"
+            href={`mailto:${SOCIAL_LINKS.email}`}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white bg-[#6C63FF] hover:bg-[#7a73ff] shadow-[0_0_24px_rgba(108,99,255,0.35)] hover:shadow-[0_0_40px_rgba(108,99,255,0.55)] transition-all duration-300 whitespace-nowrap"
           >
             Get in touch <ArrowRight size={14} />

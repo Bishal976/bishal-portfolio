@@ -33,17 +33,38 @@ export default function Recognition() {
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {RECOGNITION.map((item, i) => (
-              <motion.div
-                key={i}
-                variants={fadeUp}
-                className="glass rounded-2xl p-6 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(108,99,255,0.12)] hover:border-[rgba(108,99,255,0.25)] transition-all duration-300"
-              >
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="text-base font-semibold text-[#F0F0F5] mb-2">{item.title}</h3>
-                <p className="text-[#6B6B7B] text-sm leading-[1.65]">{item.description}</p>
-              </motion.div>
-            ))}
+            {RECOGNITION.map((item, i) => {
+              const inner = (
+                <>
+                  <div className="text-3xl mb-4">{item.icon}</div>
+                  <h3 className="text-base font-semibold text-[#F0F0F5] mb-2">{item.title}</h3>
+                  <p className="text-[#6B6B7B] text-sm leading-[1.65]">{item.description}</p>
+                  {item.link && (
+                    <span className="inline-flex items-center gap-1 mt-3 text-xs text-[#6C63FF] font-medium">
+                      View Badge ↗
+                    </span>
+                  )}
+                </>
+              );
+              return (
+                <motion.div key={i} variants={fadeUp}>
+                  {item.link ? (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block glass rounded-2xl p-6 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(108,99,255,0.12)] hover:border-[rgba(108,99,255,0.25)] transition-all duration-300"
+                    >
+                      {inner}
+                    </a>
+                  ) : (
+                    <div className="glass rounded-2xl p-6 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(108,99,255,0.12)] hover:border-[rgba(108,99,255,0.25)] transition-all duration-300">
+                      {inner}
+                    </div>
+                  )}
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
       </div>
