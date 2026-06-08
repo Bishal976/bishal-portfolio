@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-t border-[rgba(255,255,255,0.06)] py-8 mt-0">
       <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-[#888898] text-sm">
-          Designed &amp; Built by Bishal Kumar · 2025
+          Designed &amp; Built by Bishal Kumar · 2026
         </p>
         <div className="flex items-center gap-5">
           <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">

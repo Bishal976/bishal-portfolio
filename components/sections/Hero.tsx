@@ -123,13 +123,13 @@ export default function Hero() {
             >
               View My Work <ArrowRight size={15} />
             </a>
-            <a
+            {/* <a
               href="/assets/Bishal_Kumar_Resume.pdf"
               download
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm text-[#F0F0F5] border border-[rgba(108,99,255,0.45)] hover:border-[#6C63FF] hover:shadow-[0_0_24px_rgba(108,99,255,0.2)] transition-all duration-300"
             >
               <Download size={15} /> Download Resume
-            </a>
+            </a> */}
           </motion.div>
 
           {/* Social links */}

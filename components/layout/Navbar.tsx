@@ -59,7 +59,7 @@ export default function Navbar() {
               href={`mailto:${SOCIAL_LINKS.email}`}
               className="relative px-5 py-2 text-sm font-medium rounded-lg border border-[rgba(108,99,255,0.5)] text-[#F0F0F5] hover:border-[#6C63FF] hover:shadow-[0_0_20px_rgba(108,99,255,0.25)] transition-all duration-300"
             >
-              Hire Me
+              Work With Me
             </a>
           </div>
 
@@ -111,7 +111,7 @@ export default function Navbar() {
                 className="mt-4 px-8 py-3 text-lg font-medium rounded-lg bg-[#6C63FF] text-white shadow-[0_0_24px_rgba(108,99,255,0.4)]"
                 onClick={() => setMenuOpen(false)}
               >
-                Hire Me
+                Work With Me
               </motion.a>
             </nav>
           </motion.div>
