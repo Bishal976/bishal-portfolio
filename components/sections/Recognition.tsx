@@ -44,6 +44,21 @@ export default function Recognition() {
                       View Badge ↗
                     </span>
                   )}
+                  {item.links && (
+                    <div className="flex items-center gap-4 mt-3">
+                      {item.links.map((l) => (
+                        <a
+                          key={l.url}
+                          href={l.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-xs text-[#6C63FF] font-medium hover:underline"
+                        >
+                          {l.label} ↗
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </>
               );
               return (

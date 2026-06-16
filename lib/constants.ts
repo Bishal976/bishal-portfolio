@@ -108,11 +108,12 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Secured Identity Storage DApp",
+    title: "Maha Laxmi Trading Co.",
     description:
-      "Decentralised application for tamper-proof identity storage. Smart contracts in Solidity, deployed via Hardhat; React frontend with Material-UI.",
-    tags: ["React", "Solidity", "Hardhat", "Web3"],
-    github: "https://github.com/Bishal976",
+      "Client website for a Bihar-based construction material supplier and CNF distributor for Shree Cement Ltd, operating since 1998. Built for a real local business — covers products, company history, and contact. Live and in use.",
+    tags: ["Next.js", "Tailwind", "Vercel"],
+    github: "https://github.com/Bishal976/MahaLaxmiTradingCo",
+    live: "https://maha-laxmi-trading-co.vercel.app/",
   },
   {
     title: "NutriFlow AI",
@@ -123,18 +124,11 @@ export const PROJECTS: Project[] = [
     status: "live-wip",
   },
   {
-    title: "Photo Location Organiser",
+    title: "Secured Identity Storage DApp",
     description:
-      "Python CLI that auto-sorts a photo library into geo-tagged folders by parsing GPS metadata from EXIF data.",
-    tags: ["Python", "EXIF", "GPS Metadata"],
-    github: "https://github.com/Bishal976",
-  },
-  {
-    title: "More Projects on GitHub",
-    description: "Explore more of my open-source work and experiments on GitHub.",
-    tags: [],
-    github: "https://github.com/Bishal976",
-    status: "placeholder",
+      "Decentralised application for tamper-proof identity storage. Smart contracts in Solidity, deployed via Hardhat; React frontend with Material-UI.",
+    tags: ["React", "Solidity", "Hardhat", "Web3"],
+    github: "https://github.com/Bishal976/Secured-Identity-Storage-Dapp",
   },
 ];
 
@@ -143,6 +137,7 @@ export interface Recognition {
   title: string;
   description: string;
   link?: string;
+  links?: { label: string; url: string }[];
 }
 
 export const RECOGNITION: Recognition[] = [
@@ -150,27 +145,35 @@ export const RECOGNITION: Recognition[] = [
     icon: "🥈",
     title: "Silver Medal",
     description: "B.Tech CSE, Galgotia University — CGPA 9.23 / 10",
+    link: "https://certificates.galgotiasuniversity.edu.in/verify/2023/41377e66-169e-4290-975c-eff101432c08",
   },
   {
     icon: "📄",
     title: "4 Patents Filed",
-    description: "Innovations in software and computing systems",
+    description:
+      "Innovations in software and computing systems — App. Nos. 202011033464, 202111057444, 202111062118, and 1 more under process",
   },
   {
     icon: "📝",
     title: "2 Research Papers",
     description: "Published in peer-reviewed academic journals",
-  },
-  {
-    icon: "📖",
-    title: "1 Book Chapter",
-    description: "Co-authored chapter in a technical publication",
+    links: [
+      { label: "Paper 1", url: "https://ieeexplore.ieee.org/document/9915946" },
+      { label: "Paper 2", url: "https://ieeexplore.ieee.org/document/9641622" },
+    ],
   },
   {
     icon: "☁️",
     title: "Google Cloud Certified",
     description: "Certified GCP practitioner and facilitator",
     link: "https://www.qwiklabs.com/public_profiles/e10ea8e8-0e5c-49dd-aed9-7021df307faf",
+  },
+  {
+    icon: "📖",
+    title: "1 Book Chapter",
+    description:
+      "Ch. 6 — Enhancing Data Storage Security Using Web3 and Cryptography, in Blockchain and EHR",
+    link: "https://novapublishers.com/shop/blockchain-and-ehr/",
   },
   {
     icon: "🏆",
