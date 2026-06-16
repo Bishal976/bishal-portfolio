@@ -1,38 +1,120 @@
-> ⚠️ LEGAL NOTICE: This repository is proprietary. Viewing is permitted; copying, redistribution, or use of this code without explicit written permission is strictly prohibited.
+<div align="center">
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bishal Kumar
 
-## Getting Started
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Senior+Frontend+Developer;React+%26+Next.js+Engineer;Team+Lead+%7C+4x+Patent+Author;AI-Native+Product+Builder)](https://git.io/typing-svg)
 
-First, run the development server:
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-58A6FF?style=for-the-badge&logo=vercel&logoColor=white)](https://bishal-portfolio-seven.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bishal-kumar-054b30192)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/RDXgrinds)
+[![Email](https://img.shields.io/badge/Email-Reach_Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:elevatedsoul2225@gmail.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About Me
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Senior Frontend Developer at **Josh Technology Group** with 2+ years building production-scale web products. I lead a 5-engineer team shipping React & Next.js applications that serve real users — not demos.
 
-## Learn More
+| | |
+|---|---|
+| **Render Latency** | ↓ 40% — systematic profiling, code-splitting, and memoization |
+| **Load Time** | ↓ 30% — bundle optimization, caching strategy, CDN tuning |
+| **Patents** | 4 Filed &nbsp;·&nbsp; 2 Research Papers &nbsp;·&nbsp; 1 Book Chapter |
+| **Mentorship** | 2,000+ students — Google Cloud Facilitator Program |
+| **Community** | Founder, Galgotia University Cyber Cell (35 members) |
+| **Academic** | Silver Medalist, B.Tech CSE &nbsp;·&nbsp; 9.23 CGPA |
 
-To learn more about Next.js, take a look at the following resources:
+> _"I build at the intersection of clean code and sharp design. The metrics above are shipped, not estimated."_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+**Frontend**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript_ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38BDF8)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Tooling & Build**
+
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=1C1C1C)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+**Backend / Infra / Web3**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+---
+
+## Featured Projects
+
+| Project | Stack | Highlights |
+|---------|-------|------------|
+| **[Secured Identity Storage DApp](#)** | React · Solidity · Hardhat · Web3.js | Decentralized identity vault on Ethereum. Smart-contract-backed storage with wallet auth — zero centralized data exposure. |
+| **[Browser-Native Steganography Tool](#)** | React · Canvas API | Encode and decode hidden payloads inside images entirely client-side. No server, no uploads, no data leakage. |
+| **[Photo Location Organiser](#)** | Python · EXIF · GPS | CLI tool that parses GPS metadata from image EXIF headers and auto-sorts photos into geo-tagged folder trees. |
+
+> _Links update as repos go public. Contact me for early access._
+
+---
+
+## Experience & Credentials
+
+**Josh Technology Group** — Senior Frontend Developer _(2022 – Present)_
+- Lead a 5-engineer frontend team across production React/Next.js products
+- Drove a **40% render latency reduction** via lazy loading, virtual lists, and React profiler-guided refactors
+- Achieved **30% load time improvement** through route-level code-splitting and asset caching pipelines
+- Architected reusable component libraries adopted across multiple internal product lines
+
+**Google Cloud Facilitator** _(2021 – 2022)_
+- Delivered hands-on GCP labs to **2,000+ students** across Galgotia University
+- Awarded facilitator recognition for engagement and completion rates above program benchmarks
+
+**Galgotia University Cyber Cell** — Founder
+- Built a 35-member security-focused community from scratch
+- Organized CTFs, workshops, and peer mentorship programs in network security and ethical hacking
+
+**Academic**
+- 🎓 B.Tech Computer Science — Silver Medalist · **9.23 CGPA**
+- 📄 4 Patents Filed
+- 📰 2 Research Papers Published
+- 📖 1 Book Chapter (Co-author)
+
+---
+
+## GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Bishal976&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="165" alt="GitHub Stats" />
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bishal976&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="165" alt="Top Languages" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=Bishal976&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
+
+</div>
+
+---
+
+<div align="center">
+
+**Open to high-impact roles, technical collaborations, and advisory conversations.**
+
+[![Portfolio](https://img.shields.io/badge/See_My_Work-bishal--portfolio--seven.vercel.app-58A6FF?style=for-the-badge&logo=vercel&logoColor=white)](https://bishal-portfolio-seven.vercel.app/)
+
+<sub>© 2026 Bishal Kumar · Proprietary — viewing permitted, redistribution prohibited without written consent.</sub>
+
+</div>
