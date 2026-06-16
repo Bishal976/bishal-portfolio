@@ -75,8 +75,7 @@ export default function Contact() {
               <span className="gradient-text">Something.</span>
             </h2>
             <p className="text-[#6B6B7B] text-base md:text-lg mb-14 max-w-xl leading-[1.7]">
-              Interested in collaborating on interesting problems in React, Next.js, or
-              AI-integrated products? I&apos;m always open to a good conversation.
+              Working on something in React, Next.js, or AI? Let&apos;s talk scope.
             </p>
           </motion.div>
 

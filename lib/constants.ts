@@ -9,7 +9,6 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = {
   github: "https://github.com/Bishal976",
   linkedin: "https://linkedin.com/in/bishal-kumar-054b30192",
-  twitter: "https://x.com/RDXgrinds",
   instagram: "https://instagram.com/bishalsingh2225",
   leetcode: "https://leetcode.com/singhbishalkumarsingh",
   email: "elevatedsoul2225@gmail.com",
@@ -22,7 +21,7 @@ export const TYPEWRITER_PHRASES = [
 ];
 
 export const STATS = [
-  { number: "2+", label: "Years at Scale" },
+  { number: "3+", label: "Years at Scale" },
   { number: "4",  label: "Patents Filed" },
   { number: "2K+", label: "Students Mentored" },
   { number: "5",  label: "Engineers Led" },
@@ -104,7 +103,7 @@ export interface Project {
   tags: string[];
   github?: string;
   live?: string;
-  status?: "wip" | "request";
+  status?: "wip" | "request" | "live-wip" | "placeholder";
 }
 
 export const PROJECTS: Project[] = [
@@ -116,11 +115,12 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/Bishal976",
   },
   {
-    title: "Steganography Tool",
+    title: "NutriFlow AI",
     description:
-      "Browser-native tool to hide and extract secret payloads inside images using LSB encoding — no server, no upload.",
-    tags: ["React", "JavaScript", "Canvas API"],
-    github: "https://github.com/Bishal976/steganography-project",
+      "AI-powered nutrition planning app. Tracks meals, adapts to off-plan eating, and rebalances your day in real time. Built in 4 days and shipped publicly.",
+    tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind"],
+    github: "https://github.com/Bishal976/nutriflow.ai",
+    status: "live-wip",
   },
   {
     title: "Photo Location Organiser",
@@ -130,10 +130,11 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/Bishal976",
   },
   {
-    title: "Micro-SaaS — TBA",
-    description: "Building in public. A focused product shipping in 2026.",
-    tags: ["Next.js", "TypeScript", "SaaS"],
-    status: "wip",
+    title: "More Projects on GitHub",
+    description: "Explore more of my open-source work and experiments on GitHub.",
+    tags: [],
+    github: "https://github.com/Bishal976",
+    status: "placeholder",
   },
 ];
 

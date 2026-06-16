@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, type Variants } from "framer-motion";
 import { Download, ArrowRight, ChevronDown } from "lucide-react";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/ui/Icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
 import dynamic from "next/dynamic";
 import { SOCIAL_LINKS, TYPEWRITER_PHRASES } from "@/lib/constants";
 
@@ -78,7 +78,7 @@ export default function Hero() {
           <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
             <span className="w-2 h-2 rounded-full bg-[#00D4AA] pulse-dot" />
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#6B6B7B]">
-              Open to Select Collaborations
+              Open to Freelance Collaborations
             </span>
           </motion.div>
 
@@ -139,9 +139,6 @@ export default function Hero() {
             </a>
             <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <LinkedInIcon className="w-5 h-5 text-[#6B6B7B] hover:text-[#6C63FF] transition-colors" />
-            </a>
-            <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-              <XIcon className="w-5 h-5 text-[#6B6B7B] hover:text-[#6C63FF] transition-colors" />
             </a>
           </motion.div>
         </motion.div>

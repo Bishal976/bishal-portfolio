@@ -68,7 +68,7 @@ export default function About() {
             </motion.div>
 
             <motion.p variants={fadeUp} className="text-[#6B6B7B] leading-[1.8] text-base md:text-[17px]">
-              Senior Frontend Engineer with 2+ years building production-grade systems at scale —
+              Senior Frontend Engineer with 3+ years building production-grade systems at scale —
               React, Next.js, TypeScript. I lead teams, own delivery, and care about the gap
               between good code and great product.
             </motion.p>

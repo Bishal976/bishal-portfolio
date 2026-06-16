@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/ui/Icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
 import { SOCIAL_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -14,9 +14,6 @@ export default function Footer() {
           </a>
           <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <LinkedInIcon className="w-[18px] h-[18px] text-[#6B6B7B] hover:text-[#6C63FF] transition-colors" />
-          </a>
-          <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-            <XIcon className="w-[18px] h-[18px] text-[#6B6B7B] hover:text-[#6C63FF] transition-colors" />
           </a>
         </div>
       </div>
