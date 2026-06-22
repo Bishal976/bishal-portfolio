@@ -103,7 +103,7 @@ export interface Project {
   tags: string[];
   github?: string;
   live?: string;
-  status?: "wip" | "request" | "live-wip" | "placeholder";
+  status?: "wip" | "request" | "live" | "placeholder";
 }
 
 export const PROJECTS: Project[] = [
@@ -121,7 +121,15 @@ export const PROJECTS: Project[] = [
       "AI-powered nutrition planning app. Tracks meals, adapts to off-plan eating, and rebalances your day in real time. Built in 4 days and shipped publicly.",
     tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind"],
     github: "https://github.com/Bishal976/nutriflow.ai",
-    status: "live-wip",
+    status: "live",
+  },
+  {
+    title: "Market Signal Monitor",
+    description:
+      "Automated ecosystem tracker monitoring Reddit and HN for React / Next.js / AI trends in real time. LLM-scored signal filtering, runs free on GitHub Actions — no server needed.",
+    tags: ["TypeScript", "Node.js", "Groq API", "GitHub Actions"],
+    github: "https://github.com/Bishal976/market-signal-monitor",
+    status: "live",
   },
   {
     title: "Secured Identity Storage DApp",

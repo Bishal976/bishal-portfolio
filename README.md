@@ -61,11 +61,10 @@ Senior Frontend Developer at **Josh Technology Group** with 2+ years building pr
 
 | Project | Stack | Highlights |
 |---------|-------|------------|
-| **[Secured Identity Storage DApp](#)** | React · Solidity · Hardhat · Web3.js | Decentralized identity vault on Ethereum. Smart-contract-backed storage with wallet auth — zero centralized data exposure. |
-| **[Browser-Native Steganography Tool](#)** | React · Canvas API | Encode and decode hidden payloads inside images entirely client-side. No server, no uploads, no data leakage. |
-| **[Photo Location Organiser](#)** | Python · EXIF · GPS | CLI tool that parses GPS metadata from image EXIF headers and auto-sorts photos into geo-tagged folder trees. |
-
-> _Links update as repos go public. Contact me for early access._
+| **[NutriFlow AI](https://nutriflow-ai-eta.vercel.app/)** | Next.js · TypeScript · Gemini API · Vercel | Full AI SaaS built in 4 days. Personalized nutrition plans via LLM, deployed to production with auth and full user flow. |
+| **[Maha Laxmi Trading Co.](https://maha-laxmi-trading-co.vercel.app/)** | Next.js · Tailwind CSS · Vercel | Production business website for a real trading company. Clean, fast, mobile-first. Live and in use. |
+| **[Market Signal Monitor](https://github.com/Bishal976/market-signal-monitor)** | TypeScript · Node.js · Groq API · GitHub Actions | Automated ecosystem tracker monitoring Reddit and HN for React/Next.js/AI trends. Runs free on GitHub Actions, no server needed. |
+| **[Secured Identity Storage DApp](#)** | React · Solidity · Hardhat · Web3.js | Decentralized identity vault on Ethereum. Smart-contract-backed storage with wallet auth. |
 
 ---
 

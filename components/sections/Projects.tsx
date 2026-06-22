@@ -42,7 +42,7 @@ export default function Projects() {
                 className={`glass rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(108,99,255,0.18)] hover:border-[rgba(108,99,255,0.3)] transition-all duration-300 ${
                   project.status === "wip"
                     ? "border border-[rgba(255,165,0,0.2)]"
-                    : project.status === "live-wip"
+                    : project.status === "live"
                     ? "border border-[rgba(0,212,170,0.2)]"
                     : project.status === "placeholder"
                     ? "border border-dashed border-[rgba(255,255,255,0.1)] opacity-70"
@@ -64,7 +64,6 @@ export default function Projects() {
                 {/* Title */}
                 <div className="flex items-center gap-2 mb-2">
                   {project.status === "wip" && <Construction size={14} className="text-orange-400" />}
-                  {project.status === "live-wip" && <span className="w-1.5 h-1.5 rounded-full bg-[#00D4AA] flex-shrink-0" />}
                   {project.status === "request" && <Lock size={14} className="text-[#6B6B7B]" />}
                   <h3 className="text-base font-semibold text-[#F0F0F5]">{project.title}</h3>
                 </div>
@@ -104,8 +103,8 @@ export default function Projects() {
                   {project.status === "wip" && (
                     <span className="text-xs text-orange-400">Coming 2026</span>
                   )}
-                  {project.status === "live-wip" && (
-                    <span className="text-xs text-[#00D4AA]">Live · In Progress</span>
+                  {project.status === "live" && (
+                    <span className="text-xs text-[#00D4AA]">Live</span>
                   )}
                 </div>
               </motion.div>
