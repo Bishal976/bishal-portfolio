@@ -103,7 +103,7 @@ const jsonLd = {
   },
   worksFor: {
     "@type": "Organization",
-    name: "Josh Technology Group",
+    name: "a leading product tech company",
   },
   knowsAbout: ["React", "Next.js", "TypeScript", "Frontend Engineering", "Web Performance"],
   sameAs: [

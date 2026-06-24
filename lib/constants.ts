@@ -42,7 +42,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     category: "Dev Tooling & Infra",
     icon: "server",
-    skills: ["Git", "GitLab CI/CD", "Vite", "Webpack", "REST APIs", "GCP", "Vercel", "Node.js"],
+    skills: ["Git", "GitLab CI/CD", "Vite", "Webpack", "REST APIs", "GCP", "Vercel", "Node.js", "C# / .NET", "Entity Framework"],
   },
   {
     category: "Testing & Quality",
@@ -67,7 +67,7 @@ export interface ExperienceItem {
 export const EXPERIENCE: ExperienceItem[] = [
   {
     role: "Senior Frontend Developer",
-    company: "Josh Technology Group",
+    company: "a leading product tech company",
     period: "Oct 2024 – Present",
     description:
       "Leading frontend architecture across complex product surfaces. Manage a 5-engineer team through design reviews, sprint planning, and PR mentorship. Own full delivery cycles — from scoping to CI/CD.",
@@ -75,7 +75,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     role: "Frontend Developer Engineer",
-    company: "Josh Technology Group",
+    company: "a leading product tech company",
     period: "Jan 2023 – Oct 2024",
     description:
       "Built high-complexity modules end-to-end: multi-step form architectures with deep validation, scalable dashboards over large datasets, and SEO-optimised public-facing microsites with Next.js.",

@@ -78,7 +78,7 @@ export default function Hero() {
           <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
             <span className="w-2 h-2 rounded-full bg-[#00D4AA] pulse-dot" />
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#6B6B7B]">
-              Open to Select Collaborations
+              Exploring Interesting Problems
             </span>
           </motion.div>
 

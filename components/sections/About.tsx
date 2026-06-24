@@ -45,7 +45,7 @@ export default function About() {
             {/* Badge */}
             <div className="glass rounded-full px-4 py-2 flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00D4AA] pulse-dot" />
-              <span className="text-xs text-[#6B6B7B]">Currently at Josh Technology Group</span>
+              <span className="text-xs text-[#6B6B7B]">Currently at a leading product tech company</span>
             </div>
           </motion.div>
 

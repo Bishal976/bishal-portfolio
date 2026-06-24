@@ -15,7 +15,7 @@
 
 ## About Me
 
-Senior Frontend Developer at **Josh Technology Group** with 2+ years building production-scale web products. I lead a 5-engineer team shipping React & Next.js applications that serve real users — not demos.
+Senior Frontend Developer at **a leading product tech company** with 2+ years building production-scale web products. I lead a 5-engineer team shipping React & Next.js applications that serve real users — not demos.
 
 | | |
 |---|---|
@@ -51,6 +51,7 @@ Senior Frontend Developer at **Josh Technology Group** with 2+ years building pr
 **Backend / Infra / Web3**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![C#](https://img.shields.io/badge/C%23_.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -70,7 +71,7 @@ Senior Frontend Developer at **Josh Technology Group** with 2+ years building pr
 
 ## Experience & Credentials
 
-**Josh Technology Group** — Senior Frontend Developer _(2022 – Present)_
+**A leading product tech company** — Senior Frontend Developer _(2022 – Present)_
 - Lead a 5-engineer frontend team across production React/Next.js products
 - Drove a **40% render latency reduction** via lazy loading, virtual lists, and React profiler-guided refactors
 - Achieved **30% load time improvement** through route-level code-splitting and asset caching pipelines
