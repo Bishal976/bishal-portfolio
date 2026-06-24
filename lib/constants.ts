@@ -103,10 +103,30 @@ export interface Project {
   tags: string[];
   github?: string;
   live?: string;
+  liveLabel?: string;
   status?: "wip" | "request" | "live" | "placeholder";
 }
 
 export const PROJECTS: Project[] = [
+  {
+    title: "NutriFlow AI",
+    description:
+      "AI-powered nutrition planning app. Tracks meals, adapts to off-plan eating, and rebalances your day in real time. Built in 4 days and shipped publicly.",
+    tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind"],
+    github: "https://github.com/Bishal976/nutriflow.ai",
+    live: "https://nutriflow-ai-eta.vercel.app",
+    status: "live",
+  },
+  {
+    title: "Market Signal Monitor",
+    description:
+      "Automated market intelligence pipeline monitoring Reddit and HN for hiring signals in real time. LLM-scored filtering via Groq, Gmail delivery, runs free on GitHub Actions. Zero server cost.",
+    tags: ["TypeScript", "Node.js", "Groq API", "GitHub Actions"],
+    github: "https://github.com/Bishal976/market-signal-monitor",
+    live: "https://github.com/Bishal976/market-signal-monitor",
+    liveLabel: "View Bot",
+    status: "live",
+  },
   {
     title: "Maha Laxmi Trading Co.",
     description:
@@ -114,22 +134,6 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js", "Tailwind", "Vercel"],
     github: "https://github.com/Bishal976/MahaLaxmiTradingCo",
     live: "https://maha-laxmi-trading-co.vercel.app/",
-  },
-  {
-    title: "NutriFlow AI",
-    description:
-      "AI-powered nutrition planning app. Tracks meals, adapts to off-plan eating, and rebalances your day in real time. Built in 4 days and shipped publicly.",
-    tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind"],
-    github: "https://github.com/Bishal976/nutriflow.ai",
-    status: "live",
-  },
-  {
-    title: "Market Signal Monitor",
-    description:
-      "Automated ecosystem tracker monitoring Reddit and HN for React / Next.js / AI trends in real time. LLM-scored signal filtering, runs free on GitHub Actions — no server needed.",
-    tags: ["TypeScript", "Node.js", "Groq API", "GitHub Actions"],
-    github: "https://github.com/Bishal976/market-signal-monitor",
-    status: "live",
   },
   {
     title: "Secured Identity Storage DApp",

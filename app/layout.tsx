@@ -30,18 +30,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Bishal Kumar — Senior Frontend Developer",
+    default: "Bishal Kumar — Senior Full-Stack Engineer — React / Next.js / AI",
     template: "%s | Bishal Kumar",
   },
   description:
-    "Senior Frontend Developer specializing in React, Next.js, and TypeScript. 2+ years building production-grade web products, leading frontend teams, and shipping features at scale.",
+    "Senior Full-Stack Engineer specializing in React, Next.js, and AI-powered products. 2+ years building production-grade web products, leading frontend teams, and shipping features at scale.",
   keywords: [
     "Bishal Kumar",
-    "Frontend Developer",
+    "Full-Stack Engineer",
     "React Developer",
     "Next.js Engineer",
     "TypeScript",
-    "Senior Frontend Developer",
+    "AI Engineer",
     "Gurugram",
     "India",
   ],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL,
     siteName: "Bishal Kumar",
-    title: "Bishal Kumar — Senior Frontend Developer",
+    title: "Bishal Kumar — Senior Full-Stack Engineer — React / Next.js / AI",
     description:
       "Building high-performance web products at the intersection of clean code and sharp design.",
     images: [
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bishal Kumar — Senior Frontend Developer",
+    title: "Bishal Kumar — Senior Full-Stack Engineer — React / Next.js / AI",
     description:
       "Building high-performance web products at the intersection of clean code and sharp design.",
     creator: "@BishalK56217747",
@@ -94,7 +94,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Bishal Kumar",
-  jobTitle: "Senior Frontend Developer",
+  jobTitle: "Senior Full-Stack Engineer — React / Next.js / AI",
   url: BASE_URL,
   email: "elevatedsoul2225@gmail.com",
   alumniOf: {

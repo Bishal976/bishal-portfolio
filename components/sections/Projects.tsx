@@ -92,9 +92,9 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1.5 text-xs text-[#6B6B7B] hover:text-[#00D4AA] transition-colors"
-                      aria-label={`${project.title} Live`}
+                      aria-label={`${project.title} ${project.liveLabel ?? "Live"}`}
                     >
-                      <ExternalLink size={14} /> Live
+                      <ExternalLink size={14} /> {project.liveLabel ?? "Live"}
                     </a>
                   )}
                   {project.status === "request" && (
@@ -103,7 +103,7 @@ export default function Projects() {
                   {project.status === "wip" && (
                     <span className="text-xs text-orange-400">Coming 2026</span>
                   )}
-                  {project.status === "live" && (
+                  {project.status === "live" && !project.live && (
                     <span className="text-xs text-[#00D4AA]">Live</span>
                   )}
                 </div>
