@@ -126,8 +126,6 @@ export const PROJECTS: Project[] = [
       "Automated market intelligence pipeline monitoring Reddit and HN for hiring signals in real time. LLM-scored filtering via Groq, Gmail delivery, runs free on GitHub Actions. Zero server cost.",
     tags: ["TypeScript", "Node.js", "Groq API", "GitHub Actions"],
     github: "https://github.com/Bishal976/market-signal-monitor",
-    live: "https://github.com/Bishal976/market-signal-monitor",
-    liveLabel: "View Bot",
     status: "live",
     previewImage: "/assets/market-signal-monitor-preview.png",
     previewImageAlt: "Market Signal Monitor email alert preview",
