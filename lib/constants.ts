@@ -114,11 +114,14 @@ export const PROJECTS: Project[] = [
   {
     title: "NutriFlow AI",
     description:
-      "AI-powered nutrition planning app. Tracks meals, adapts to off-plan eating, and rebalances your day in real time. Built in 4 days and shipped publicly.",
+      "AI-powered nutrition planning app built in 4 days. Next.js 14 App Router, Gemini API, Supabase auth, Vercel deployment. Tracks meals, adapts to off-plan eating, rebalances your day in real time.",
     tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind"],
     github: "https://github.com/Bishal976/nutriflow.ai",
     live: "https://nutriflow-ai-eta.vercel.app",
     status: "live",
+    previewImage: "/assets/nutriflow-preview.png",
+    previewImageAlt: "NutriFlow AI dashboard preview",
+    previewImageReady: true,
   },
   {
     title: "Market Signal Monitor",
@@ -138,6 +141,9 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js", "Tailwind", "Vercel"],
     github: "https://github.com/Bishal976/MahaLaxmiTradingCo",
     live: "https://maha-laxmi-trading-co.vercel.app/",
+    previewImage: "/assets/maha-laxmi-preview.png",
+    previewImageAlt: "Maha Laxmi Trading Co. homepage preview",
+    previewImageReady: true,
   },
 ];
 

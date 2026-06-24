@@ -78,7 +78,7 @@ export default function Projects() {
                   <img
                     src={project.previewImage}
                     alt={project.previewImageAlt ?? `${project.title} preview`}
-                    className="rounded-lg border border-[rgba(255,255,255,0.06)] mb-5 w-full"
+                    className="rounded-lg border border-[rgba(255,255,255,0.06)] mb-5 w-full aspect-video object-cover"
                   />
                 )}
 
