@@ -131,7 +131,7 @@ export const PROJECTS: Project[] = [
     status: "live",
     previewImage: "/assets/market-signal-monitor-preview.png",
     previewImageAlt: "Market Signal Monitor email alert preview",
-    previewImageReady: false,
+    previewImageReady: true,
   },
   {
     title: "Maha Laxmi Trading Co.",
