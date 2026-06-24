@@ -73,6 +73,15 @@ export default function Projects() {
                   {project.description}
                 </p>
 
+                {/* Preview image */}
+                {project.previewImage && project.previewImageReady && (
+                  <img
+                    src={project.previewImage}
+                    alt={project.previewImageAlt ?? `${project.title} preview`}
+                    className="rounded-lg border border-[rgba(255,255,255,0.06)] mb-5 w-full"
+                  />
+                )}
+
                 {/* Footer links */}
                 <div className="flex items-center gap-4 pt-4 border-t border-[rgba(255,255,255,0.05)]">
                   {project.github && (

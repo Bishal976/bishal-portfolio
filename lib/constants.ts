@@ -52,7 +52,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     category: "AI & Other",
     icon: "layers",
-    skills: ["LLM Integration", "Prompt Engineering", "Solidity", "Python", "Graphic Design"],
+    skills: ["LLM Integration", "Prompt Engineering", "Supabase", "Python", "Graphic Design"],
   },
 ];
 
@@ -105,6 +105,9 @@ export interface Project {
   live?: string;
   liveLabel?: string;
   status?: "wip" | "request" | "live" | "placeholder";
+  previewImage?: string;
+  previewImageAlt?: string;
+  previewImageReady?: boolean;
 }
 
 export const PROJECTS: Project[] = [
@@ -126,6 +129,9 @@ export const PROJECTS: Project[] = [
     live: "https://github.com/Bishal976/market-signal-monitor",
     liveLabel: "View Bot",
     status: "live",
+    previewImage: "/assets/market-signal-monitor-preview.png",
+    previewImageAlt: "Market Signal Monitor email alert preview",
+    previewImageReady: false,
   },
   {
     title: "Maha Laxmi Trading Co.",
@@ -134,13 +140,6 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js", "Tailwind", "Vercel"],
     github: "https://github.com/Bishal976/MahaLaxmiTradingCo",
     live: "https://maha-laxmi-trading-co.vercel.app/",
-  },
-  {
-    title: "Secured Identity Storage DApp",
-    description:
-      "Decentralised application for tamper-proof identity storage. Smart contracts in Solidity, deployed via Hardhat; React frontend with Material-UI.",
-    tags: ["React", "Solidity", "Hardhat", "Web3"],
-    github: "https://github.com/Bishal976/Secured-Identity-Storage-Dapp",
   },
 ];
 
