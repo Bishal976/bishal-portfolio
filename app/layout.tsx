@@ -18,7 +18,7 @@ const syne = Syne({
   preload: true,
 });
 
-const BASE_URL = "https://bishal-portfolio-seven.vercel.app";
+const BASE_URL = "https://bishalkumar.com";
 
 export const viewport: Viewport = {
   width: "device-width",
