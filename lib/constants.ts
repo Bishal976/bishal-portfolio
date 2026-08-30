@@ -7,11 +7,13 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/Bishal976",
-  linkedin: "https://linkedin.com/in/bishal-kumar-054b30192",
-  instagram: "https://instagram.com/bishalsingh2225",
+  github: "https://github.com/onlybishalkumar",
+  linkedin: "https://www.linkedin.com/in/onlybishalkumar/",
+  instagram: "https://www.instagram.com/onlybishalkumar/",
+  twitter: "https://x.com/onlybishalkumar",
   leetcode: "https://leetcode.com/singhbishalkumarsingh",
-  email: "elevatedsoul2225@gmail.com",
+  email: "onlybishalkumar@gmail.com",
+  phone: "+91 9582983938",
 };
 
 export const TYPEWRITER_PHRASES = [
@@ -116,7 +118,7 @@ export const PROJECTS: Project[] = [
     description:
       "AI-powered nutrition planning app built in 4 days. Next.js 14 App Router, Gemini API, Supabase auth, Vercel deployment. Tracks meals, adapts to off-plan eating, rebalances your day in real time.",
     tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind"],
-    github: "https://github.com/Bishal976/nutriflow.ai",
+    github: "https://github.com/onlybishalkumar/nutriflow.ai",
     live: "https://nutriflow-ai-eta.vercel.app",
     status: "live",
     previewImage: "/assets/nutriflow-preview.png",
@@ -128,7 +130,7 @@ export const PROJECTS: Project[] = [
     description:
       "Automated market intelligence pipeline monitoring Reddit and HN for hiring signals in real time. LLM-scored filtering via Groq, Gmail delivery, runs free on GitHub Actions. Zero server cost.",
     tags: ["TypeScript", "Node.js", "Groq API", "GitHub Actions"],
-    github: "https://github.com/Bishal976/market-signal-monitor",
+    github: "https://github.com/onlybishalkumar/market-signal-monitor",
     status: "live",
     previewImage: "/assets/market-signal-monitor-preview.png",
     previewImageAlt: "Market Signal Monitor email alert preview",
@@ -139,7 +141,7 @@ export const PROJECTS: Project[] = [
     description:
       "Client website for a Bihar-based construction material supplier and CNF distributor for Shree Cement Ltd, operating since 1998. Built for a real local business — covers products, company history, and contact. Live and in use.",
     tags: ["Next.js", "Tailwind", "Vercel"],
-    github: "https://github.com/Bishal976/MahaLaxmiTradingCo",
+    github: "https://github.com/onlybishalkumar/MahaLaxmiTradingCo",
     live: "https://maha-laxmi-trading-co.vercel.app/",
     previewImage: "/assets/maha-laxmi-preview.png",
     previewImageAlt: "Maha Laxmi Trading Co. homepage preview",

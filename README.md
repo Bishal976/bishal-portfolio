@@ -5,9 +5,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Senior+Frontend+Developer;React+%26+Next.js+Engineer;Team+Lead+%7C+4x+Patent+Author;AI-Native+Product+Builder)](https://git.io/typing-svg)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-58A6FF?style=for-the-badge&logo=vercel&logoColor=white)](https://bishal-portfolio-seven.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bishal-kumar-054b30192)
-[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/RDXgrinds)
-[![Email](https://img.shields.io/badge/Email-Reach_Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:elevatedsoul2225@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/onlybishalkumar/)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/onlybishalkumar)
+[![Email](https://img.shields.io/badge/Email-Reach_Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:onlybishalkumar@gmail.com)
 
 </div>
 
@@ -64,7 +64,7 @@ Senior Frontend Developer at **a leading product tech company** with 2+ years bu
 |---------|-------|------------|
 | **[NutriFlow AI](https://nutriflow-ai-eta.vercel.app/)** | Next.js · TypeScript · Gemini API · Vercel | Full AI SaaS built in 4 days. Personalized nutrition plans via LLM, deployed to production with auth and full user flow. |
 | **[Maha Laxmi Trading Co.](https://maha-laxmi-trading-co.vercel.app/)** | Next.js · Tailwind CSS · Vercel | Production business website for a real trading company. Clean, fast, mobile-first. Live and in use. |
-| **[Market Signal Monitor](https://github.com/Bishal976/market-signal-monitor)** | TypeScript · Node.js · Groq API · GitHub Actions | Automated ecosystem tracker monitoring Reddit and HN for React/Next.js/AI trends. Runs free on GitHub Actions, no server needed. |
+| **[Market Signal Monitor](https://github.com/onlybishalkumar/market-signal-monitor)** | TypeScript · Node.js · Groq API · GitHub Actions | Automated ecosystem tracker monitoring Reddit and HN for React/Next.js/AI trends. Runs free on GitHub Actions, no server needed. |
 | **[Secured Identity Storage DApp](#)** | React · Solidity · Hardhat · Web3.js | Decentralized identity vault on Ethereum. Smart-contract-backed storage with wallet auth. |
 
 ---
@@ -97,13 +97,13 @@ Senior Frontend Developer at **a leading product tech company** with 2+ years bu
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Bishal976&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="165" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=onlybishalkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="165" alt="GitHub Stats" />
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bishal976&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="165" alt="Top Languages" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=onlybishalkumar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="165" alt="Top Languages" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=Bishal976&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
+<img src="https://streak-stats.demolab.com/?user=onlybishalkumar&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
 
 </div>
 

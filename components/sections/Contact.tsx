@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
-import { Mail, Copy, Check, ArrowRight, Send, Loader2 } from "lucide-react";
+import { Mail, Phone, Copy, Check, ArrowRight, Send, Loader2 } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { SOCIAL_LINKS } from "@/lib/constants";
@@ -29,7 +29,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
     try {
-      const res = await fetch("https://formsubmit.co/ajax/elevatedsoul2225@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/onlybishalkumar@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
@@ -111,7 +111,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-0.5">LinkedIn</div>
-                  <div className="text-[#F0F0F5] text-sm">bishal-kumar-054b30192</div>
+                  <div className="text-[#F0F0F5] text-sm">onlybishalkumar</div>
                 </div>
               </a>
 
@@ -126,7 +126,20 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-0.5">GitHub</div>
-                  <div className="text-[#F0F0F5] text-sm">Bishal976</div>
+                  <div className="text-[#F0F0F5] text-sm">onlybishalkumar</div>
+                </div>
+              </a>
+
+              <a
+                href={`tel:${SOCIAL_LINKS.phone.replace(/\s+/g, "")}`}
+                className="flex items-center gap-4 glass rounded-xl p-5 hover:border-[rgba(108,99,255,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="w-10 h-10 rounded-lg bg-[rgba(108,99,255,0.12)] flex items-center justify-center flex-shrink-0">
+                  <Phone size={18} className="text-[#6C63FF]" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-[0.15em] text-[#6B6B7B] mb-0.5">Phone</div>
+                  <div className="text-[#F0F0F5] text-sm">{SOCIAL_LINKS.phone}</div>
                 </div>
               </a>
             </motion.div>

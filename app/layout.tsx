@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: "Bishal Kumar — Senior Full-Stack Engineer — React / Next.js / AI",
     description:
       "Building high-performance web products at the intersection of clean code and sharp design.",
-    creator: "@BishalK56217747",
+    creator: "@onlybishalkumar",
     images: ["/og-image.png"],
   },
   manifest: "/manifest.json",
@@ -96,7 +96,8 @@ const jsonLd = {
   name: "Bishal Kumar",
   jobTitle: "Senior Full-Stack Engineer — React / Next.js / AI",
   url: BASE_URL,
-  email: "elevatedsoul2225@gmail.com",
+  email: "onlybishalkumar@gmail.com",
+  telephone: "+91 9582983938",
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "Galgotias University",
@@ -107,9 +108,10 @@ const jsonLd = {
   },
   knowsAbout: ["React", "Next.js", "TypeScript", "Frontend Engineering", "Web Performance"],
   sameAs: [
-    "https://github.com/Bishal976",
-    "https://linkedin.com/in/bishal-kumar-054b30192",
-    "https://twitter.com/BishalK56217747",
+    "https://github.com/onlybishalkumar",
+    "https://www.linkedin.com/in/onlybishalkumar/",
+    "https://x.com/onlybishalkumar",
+    "https://www.instagram.com/onlybishalkumar/",
   ],
 };
 
